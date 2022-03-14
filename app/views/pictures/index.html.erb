@@ -1,0 +1,23 @@
+<h1>Pictures</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Url</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @pictures.each do |picture| %>
+            <tr>
+                <td><%= picture.title %></td>
+                <td><%= picture.description %></td>
+                <td><%= picture.url %></td>
+                <td></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
